@@ -1,0 +1,359 @@
+body{
+    font-family: 'Lato', sans-serif;
+    direction: ltr;
+    background-image: url(../img/blackbg.jpg);
+    
+}
+.Bg{
+    height:auto;
+    background-color:#ffffff;
+    border-radius: 5px;
+    margin: 61px auto 22px ; 
+}
+
+
+}
+.container{
+ width: 470px;
+ 
+}
+/* textTitile | Start */
+ .textTitile h1{
+  font-size: 50px;
+  text-shadow:0px 0px 4px black;
+  margin-top:34px;
+  margin-bottom: 58px;
+  text-align: center;   
+}
+.textTitile span{
+    text-decoration: underline;
+    text-decoration-color:#ea8d14;
+}
+ .textTitile .focuse{
+    font-size: 55px;
+}
+/* textTitile | End */
+/*  Leapbad | Start */
+.Leapbad img{
+margin-bottom: 13px;
+}
+.Leapbad h2{
+padding-left:49px;
+font-size: 30px;
+color: #303135;
+}
+ .Leapbad hr{  
+width:477px;
+border: 1px solid  #303135;
+margin-left:49px;
+}
+.list p{
+margin-left:49px;
+font-size: 15px;
+}
+.list span{
+ color: #ea8d14;
+ margin-right: 14px;
+ font-size: 20px;
+ font-weight: 600;
+ float: left;
+}
+.discount{
+ background-color:#ea8d14;
+ border-radius:5px;
+ padding-left:26px;
+ padding-right:26px;
+ font-size: 30px; 
+ margin-left: 120px;
+ text-shadow:0px 0px 2px black;
+     
+}
+
+.discount span{
+  color: white;
+}
+.secrow{
+    padding-top: 60px
+}
+.availbleOn {
+ margin-top: 0px;
+}
+/*  Leapbad | End */
+
+/* mobilefeatures | Start*/
+.mobilefeatures{
+    padding-bottom: 30px;
+}
+.mobilefeatures img{
+    padding-left: 50px;
+}
+.star{
+          color: #ffb600;
+          font-size: 24px;
+          padding: 0px; /* space out the stars */
+        }
+        .star::before{
+          content: '\2606';    /* star outline */
+          cursor: pointer;
+        }
+        .star.rated::before{
+          /* the style for a selected star */
+          content: '\2605';  /* filled star */
+        }
+        
+        .stars{
+            counter-reset: rateme 0;   
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .star.rated{
+            counter-increment: rateme 1;
+        }
+        .stars::after{
+            content: counter(rateme) '/5';
+            font-size: 20px;
+            color:#367ab7;
+        }
+.mobilefeatures .CouponeBtn{
+ background: #eea616;
+ height: 70px;
+ color: white;
+ font-size: 30px;
+ border-radius: 5px; 
+ text-shadow:0px 0px 7px black;
+ padding: 10px 70px; 
+ margin-left: 120px;
+
+}
+
+.mobilefeatures .CouponeBtn:hover{
+ background: black;
+ color:#eea616;
+ font-weight: bold;
+ text-shadow:0px 0px 2px white; 
+}
+
+form{
+opacity: 0.5px;
+border-radius:5px;
+
+}
+.modal input{
+ color: black;
+ border: 1px solid black;
+ font-size: 20px;
+ height: 60px;
+ width: 400px;
+ margin-top: 30px;
+ padding-left: 10px;
+ font-style: italic;
+
+
+}
+ .modal-content button{
+ background-color:#fc9917;
+ font-size: 30px;
+ color:white;
+ text-shadow:0px 0px 4px white;
+}
+
+form p{
+    float: left;
+}
+/* webkit based browsers F*/
+input::-webkit-input-placeholder {
+   color: black;
+}
+
+/* Firefox 18- */
+input:-moz-placeholder 
+{
+   color: black;  
+}
+
+/* Firefox 19+ */
+input::-moz-placeholder
+{
+   color: black;  
+}
+
+/* Internet Explorer */
+input:-ms-input-placeholder 
+{  
+   color: purple;  
+}
+
+.notes{
+ font-size: 15px;
+ margin-top: 13px;
+ text-align: center;
+ margin-left: 50px;
+}
+/* mobilefeatures | End */
+/* footer | Start*/
+.footer{
+color:#dbdbdb;
+margin-bottom: 40px;
+}
+.link{
+ color:#dbdbdb;
+ padding-right:40px;
+}
+.link:last-child{
+ padding-right:none;
+}
+.link:hover{
+ color: white;
+}
+
+/* footer | End*/
+@media (max-width: 1140px
+){
+    .availbleOn{
+        width: 100%;
+        margin-top: 0;
+    }
+    .mobilefeatures .CouponeBtn{
+        width: 100%;
+        font-size: 24px;
+        padding: 10px;
+        margin-left: 2px;
+    }
+    .Leapbad hr{
+        width: auto;
+        margin: 0 auto
+    }
+    .link{
+        font-size: 15px;
+    padding-right: 16px;
+
+    }
+    .Leapbad img{
+        
+        margin: 15px auto;
+        display: block;
+    }
+    .mobilefeatures .secrow{
+        padding-top: 60px
+    }
+}
+@media(max-width: 960px){
+    .availbleOn{
+        width: 100%
+    }
+    .mobilefeatures .CouponeBtn{
+        width: 100%;
+        font-size: 24px;
+        padding: 10px;
+        margin-left: 2px;
+    }
+}
+
+@media (max-width:  768px){
+    .textTitile h1{
+        font-size:30px
+    }
+    .Leapbad hr{
+        width: auto;
+        margin: 0 auto
+    }
+    .availbleOn{
+        width: 100%;
+        margin-top: 20px
+    }
+    .smallScreen .availbleOn{
+        margin-top: 20px
+    }
+    .mobilefeatures img{
+    padding-left: 5px;
+    }
+    .mobilefeatures .CouponeBtn{
+        width: 100%;
+        font-size: 15px
+       padding-left:35px;
+        margin-left: 5px;
+        
+    }
+    .smallScreen .discount{
+        font-size: 25px;
+    margin-left: 0px;
+    }
+    .mobilefeatures{
+        padding: 0px 30px
+    }
+    .availbleOnPic2{
+        display: block;
+        margin: 30px auto
+    }
+    .notes{
+        margin: 20px 0px;
+        padding-bottom: 20px;
+    }
+    .smallScreenTitle .textTitile h1{
+        font-size:30px
+    }
+    
+}
+
+@media (max-width: 540px)/*for small screen*/
+
+{
+    .textTitile h1{
+        font-size: 30px
+    }
+    .Leapbad img{
+        width: 100%;
+        margin: 15px auto;
+        display: block;
+    }
+    .mobilefeatures img{
+    padding-left: 5px;
+}
+
+    .star{
+          font-size: 17px;
+        }
+        .stars{  
+            font-size: 17px;
+            font-weight: 400;
+        }
+        
+        .stars::after{
+            font-size: 17px;
+        }
+    .mobilefeatures .CouponeBtn{
+        width: 100%;
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 2px;
+
+    }
+    .smallScreen .discount{
+        font-size: 25px;
+       margin-left: 0px;
+    }
+    .discount{
+    padding-left:12px;
+    padding-right:12px;
+    font-size: 20px; 
+   margin-left: 50px;
+   
+     
+}
+     .smallScreen .availbleOn{
+         margin-top: 0
+     }
+     .availbleOnPic2{
+         margin-top: 30px;
+         display: block;
+         margin: 30px auto
+     }
+     .notes{
+        margin: 20px 0px;
+        padding-bottom: 20px;
+    }
+
+
+    
+}
+
